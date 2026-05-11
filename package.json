@@ -4,8 +4,9 @@
   "description": "Cartel UCR hecho con Web Components.",
   "type": "module",
   "scripts": {
-    "start": "npx serve .",
-    "pages": "echo \"GitHub Pages: usar Actions para publicar la carpeta src\""
+    "dev": "pnpx servor src/ index.html 1234 --reload",
+    "build": "echo \"Build script\"",
+    "deploy": "gh-pages -d src"
   },
   "keywords": [
     "web-components",
@@ -13,5 +14,9 @@
     "ucr"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "servor": "^4.0.2"
+  }
 }
