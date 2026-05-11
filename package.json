@@ -1,0 +1,17 @@
+{
+  "name": "multimedios-lab9",
+  "version": "1.0.0",
+  "description": "Cartel UCR hecho con Web Components.",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve .",
+    "pages": "echo \"GitHub Pages: usar Actions para publicar la carpeta src\""
+  },
+  "keywords": [
+    "web-components",
+    "github-pages",
+    "ucr"
+  ],
+  "author": "",
+  "license": "MIT"
+}
