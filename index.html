@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Cartel UCR</title>
-
   <style>
     body {
       min-height: 100vh;
@@ -16,86 +14,21 @@
 
     .gallery {
       min-height: 100vh;
-
       display: flex;
       flex-wrap: wrap;
-
       justify-content: center;
       align-items: center;
-
       gap: 32px;
-
       padding: 32px 16px;
-
       box-sizing: border-box;
     }
-
-    /* Ejemplo de customización usando CSS Parts */
-
-    ucr-sign::part(message) {
-      font-size: 20px;
-      text-transform: uppercase;
-    }
-
-    cartel-direccional::part(footer) {
-      border-top: 4px solid black;
-    }
-
   </style>
-
   <script type="module" src="./main.js"></script>
 </head>
-
 <body>
-
   <main class="gallery">
-
-    <!-- Ejemplo usando variables CSS -->
-
-    <cartel-direccional
-      style="
-        --cartel-bg:#7b1fa2;
-        --cartel-text-color:#ffffff;
-        --cartel-footer-bg:#f5f5f5;
-        --cartel-footer-text:#7b1fa2;
-        --cartel-radius:12px;
-      "
-    >
-
-      <!-- Ejemplo usando slots -->
-
-      <li slot="items">
-        Biblioteca
-        <span class="flecha">&rarr;</span>
-      </li>
-
-      <li slot="items">
-        Laboratorio Web
-        <span class="flecha">&rarr;</span>
-      </li>
-
-    </cartel-direccional>
-
-    <ucr-sign
-      style="
-        --poster-radius:20px;
-        --headline-primary:#ff1744;
-        --headline-secondary:#4a148c;
-        --message-color:#1a237e;
-      "
-    >
-
-      <!-- Slot del mensaje -->
-
-      <span slot="mensaje">
-        Tu voz importa
-        <br>
-        ¡Denunciá el acoso!
-      </span>
-
-    </ucr-sign>
-
+    <cartel-direccional></cartel-direccional>
+    <ucr-sign></ucr-sign>
   </main>
-
 </body>
 </html>
