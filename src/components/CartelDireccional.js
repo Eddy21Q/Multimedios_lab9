@@ -91,38 +91,38 @@ class CartelDireccional extends HTMLElement {
 
         <ul class="cartel__lista" part="lista">
 
-          <slot name="items">
+          <li>
+            Aulas 5, 6 y 7
+            <span class="flecha">&rarr;</span>
+          </li>
 
-            <li>
-              Aulas 5, 6 y 7
-              <span class="flecha">&rarr;</span>
-            </li>
+          <li>
+            Apoyo Inform&aacute;tico
+            <span class="flecha">&rarr;</span>
+          </li>
 
-            <li>
-              Apoyo Inform&aacute;tico
-              <span class="flecha">&rarr;</span>
-            </li>
+          <li>
+            Servidores
+            <span class="flecha">&rarr;</span>
+          </li>
 
-            <li>
-              Servidores
-              <span class="flecha">&rarr;</span>
-            </li>
+          <li>
+            Laboratorio 1 y 2
+            <span class="flecha">&rarr;</span>
+          </li>
 
-            <li>
-              Laboratorio 1 y 2
-              <span class="flecha">&rarr;</span>
-            </li>
+          <li class="doble-linea">
+            <div class="doble-linea-texto">
+              <div>Coordinaci&oacute;n</div>
+              <div>Inform&aacute;tica Empresarial</div>
+            </div>
 
-            <li class="doble-linea">
-              <div class="doble-linea-texto">
-                <div>Coordinaci&oacute;n</div>
-                <div>Inform&aacute;tica Empresarial</div>
-              </div>
+            <span class="flecha">&rarr;</span>
+          </li>
 
-              <span class="flecha">&rarr;</span>
-            </li>
+          <!-- Slot agregado sin romper diseño -->
 
-          </slot>
+          <slot name="extra-item"></slot>
 
         </ul>
 
